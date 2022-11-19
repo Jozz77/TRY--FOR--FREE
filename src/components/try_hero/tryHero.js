@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Try_pic from '../Assets/Try-hero.png'
+import Background from '../../Assets/Try-background.png'
+import Try_pic from '../../Assets/Try-hero.png'
 import './try-hero.css'
 export default function tryHero() {
   return (
@@ -16,6 +17,7 @@ export default function tryHero() {
             <div className='hero-2'>
                 <img src={Try_pic} alt='some' />
             </div>
+            <img className='background-image' src={Background} alt='some' />
         </div>
 
         <div className='down-hero'>

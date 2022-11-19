@@ -1,13 +1,11 @@
 import React from 'react'
-import TryHero from './components/tryHero'
-import './try_second.css'
-import Recording_logo from './Assets/Recording-logo.png'
-import Transcribe_logo from './Assets/file-transcribing.png'
+import './try_state_3.css'
+import Recording_logo from '../../Assets/Recording-logo.png'
+import Transcribe_logo from '../../Assets/file-transcribing.png'
 
 export default function try_second() {
   return (
     <div>
-         <TryHero />
          <div className='recording-drag'>
           <div className='recording-content'>
             <div className='recording-image-container'><img src={Recording_logo} alt='some' /></div>

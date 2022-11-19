@@ -1,38 +1,17 @@
 import React from 'react'
-import TryHero from './components/tryHero'
-import './try.css'
-import Recording_logo from './Assets/Recording-logo.png'
+import TryHero from './components/try_hero/tryHero'
+// import TryState1 from './components/try_state_1/try_state_1'
+// import TryState3 from './components/try_state_3/try_state_3'
+import TryState4 from './components/try_state_4/Try_state_4'
+
 export default function Try() {
   return (
     <section>
         <TryHero />
+        {/* <TryState1 /> */}
+        {/* <TryState3 /> */}
+        <TryState4 />
 
-
-        <div className='recording-drag'>
-          <div className='recording-content'>
-            <div className='recording-image-container'><img src={Recording_logo} alt='some' /></div>
-            <h4>Drag and drop agent audio call recordings</h4>
-            <div className='or'>
-            <hr />
-              <p>OR</p>
-              <hr />
-            </div>
-
-            <p className='upload'>Browse from your computer</p>
-            <button>Transcribe</button>
-          </div>
-        </div>
-
-        <div className='try-note'>
-          <p>Please note;</p>
-          <ul>
-            <li>You may upload, transcribe and analyse only one recording at a  time.</li>
-            <li>File must not be larger than 5mb.</li>
-            <li>Transcription may take up to 3 minutes, kindly wait or sign up to use the job ID feature.</li>
-            <li>Downloading sentiment anlysis is currently only available on the webapp.</li>
-            <li>Tracking sentiment anlysis records is currently only available on the webapp.</li>
-          </ul>
-        </div>
     </section>
   )
 }
